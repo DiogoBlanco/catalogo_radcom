@@ -1,4 +1,15 @@
 {% extends 'global/base.html' %}
+{% load static %}
 {% block title %}Catálogo Radcom{% endblock title %}
 {% block content %}
+<div class="row">
+    <div class="col-6">
+        <h1 class="text-light mt-4" style="font-size: 4rem;">Conheça nossos produtos.</h1>
+        <button type="button" class="btn btn-light mt-5">Acessar Catálogo</button>
+    </div>
+    <div class="col-6">
+        <img class="mt-4" src="{% static 'img/access.jpg' %}" alt="access" width="500rem">
+    </div>
+  </div>
+</div>
 {% endblock content %}
